@@ -1,1 +1,44 @@
-# How to use Git and Github
+How to use Git and Github
+
+Clone: lấy dữ liệu về máy
+Push: đẩy dữ liệu lên cloud
+Pull: cập nhật phiên bản mới nhất
+Fetch: tạo nhánh
+
+!!! git pull origin main: lấy phiên bản mới nhất trước khi bắt đầu làm việc
+!!! tạo .gitignore
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+git clone [link]: lấy dữ liệu về máy tính | remote repository -> working copy (local repository)
+git status: kiểm tra có sự thay đổi 
+git add [file/folder]: thêm những file/folder có sự thay đổi | working copy -> staging area 
+git commit -m '[message]':   | staging area -> local repository
+git push origin [main]: đẩy dữ liệu lên nhánh main (có thể có nhiều nhánh) | local repository -> remote repository
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// git add . :add toàn bộ, không nên sử dụng vì sẽ có 1 số file chưa được cấu hình ignore
+// git diff [fileName]: kiểm tra file đã thay đổi như thế nào
+
+// Giao thức HTTP: yêu cầu username và password của github khi lần đầu push
+// Giao thức SSH: sử dụng [private key/ public key] để xác thực tự động
+
+
+------------Tạo nhánh------------
+git branch: xem nhánh hiện tại đang làm việc
+git branch [name]: tạo nhánh mới
+git checkout [name]: chuyển nhánh làm việc
+
+// git push origin [branchName]
+// create pull requests
+
+
+-----------Xử lý xung đột-----------
+Vd: khi chưa cập nhật phiên bản mới mà làm việc trên phiên bản cũ
+
+Nguyên tắc: chỉ trộn từ main vào branch => tránh ảnh hưởng đến main
+git pull origin main -> git checkout [branchName] -> git merge main 
+
+
+-------------------------------------------------------------------------------------------
+git checkout [fileName]: đưa file về trạng thái ban đầu (chưa được thay đổi, phiên bản HEAD)
