@@ -1,12 +1,12 @@
 How to use Git and Github
 
-Clone: lấy dữ liệu về máy
+Clone: lấy dữ liệu về local
 Push: đẩy dữ liệu lên cloud
-Pull: cập nhật phiên bản mới nhất
+Pull: cập nhật phiên bản mới nhất cho local
 Fetch: tạo nhánh
 
 !!! git pull origin main: lấy phiên bản mới nhất trước khi bắt đầu làm việc
-!!! tạo .gitignore
+!!! tạo .gitignore (hidden file): avoid conflict
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 git clone [link]: lấy dữ liệu về máy tính | remote repository -> working copy (local repository)
@@ -17,20 +17,17 @@ git push origin [main]: đẩy dữ liệu lên nhánh main (có thể có nhi�
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-// git add . :add toàn bộ, không nên sử dụng vì sẽ có 1 số file chưa được cấu hình ignore
-// git diff [fileName]: kiểm tra file đã thay đổi như thế nào
-
-// Giao thức HTTP: yêu cầu username và password của github khi lần đầu push
-// Giao thức SSH: sử dụng [private key/ public key] để xác thực tự động
-
-
-------------Tạo nhánh------------
+------------Branch------------
 git branch: xem nhánh hiện tại đang làm việc
 git branch [name]: tạo nhánh mới
 git checkout [name]: chuyển nhánh làm việc
 
 // git push origin [branchName]
 // create pull requests
+
+git branch -d [branchName]: xóa ở local
+git branch -D [branchName]
+git push origin :[branchName]: xóa ở cloud
 
 
 -----------Xử lý xung đột-----------
@@ -41,4 +38,24 @@ git pull origin main -> git checkout [branchName] -> git merge main
 
 
 -------------------------------------------------------------------------------------------
+// git add . :add toàn bộ, không nên sử dụng vì sẽ có 1 số file chưa được cấu hình ignore
+// git diff [fileName]: kiểm tra file đã thay đổi như thế nào
+
+// Giao thức HTTP: yêu cầu username và password của github khi lần đầu push
+// Giao thức SSH: sử dụng [private key/ public key] để xác thực tự động
+
+
 git checkout [fileName]: đưa file về trạng thái ban đầu (chưa được thay đổi, phiên bản HEAD)
+git checkout -b [branchName]: tạo branch (nếu chưa có) và chuyển sang branch đó để làm việc
+git reset [fileName]: staging area -> working copy
+
+Chỉ được chuyển nhánh khi đã commit ở nhánh hiện tại 
+=> dùng git stash: lưu trạng thái đang làm việc vào stash, đồng thời đưa nhánh đang làm việc về trạng thái ban đầu
+git stash list -> git stash apply [id_stash] (id_stash = null -> apply all)
+
+git log [-number] (number: số commit muốn xem | -number = null -> show all): list các commit đã đưa lên
+git log --oneline
+
+git rm [fileName]
+
+
