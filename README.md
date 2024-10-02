@@ -5,7 +5,7 @@
 
 - 💬 Ask me about **React Native**
 
-- 📫 How to reach me **2252????@gm.uit.edu.vn**
+/* - 📫 How to reach me **2252????@gm.uit.edu.vn** */
 
 <br>
 <h2 align="left"><b>My Skills</b></h2>
