@@ -5,7 +5,7 @@
 
 - 💬 Ask me about **React Native**
 
-- 📫 How to reach me **22520066@gm.uit.edu.vn**
+- 📫 How to reach me **2252????@gm.uit.edu.vn**
 
 <br>
 <h2 align="left"><b>My Skills</b></h2>
@@ -62,8 +62,8 @@
 
 <br><br>
 <hr style="width: 50%; height:2px;"; align="center">
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=anh005&show_icons=true&locale=en&layout=compact" alt="anh005" /></p>
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=anh005&show_icons=true&locale=en&layout=compact" alt="anhntb" /></p>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=anh005&show_icons=true&locale=en" alt="anh005" /></p>
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=anh005&show_icons=true&locale=en" alt="anhntb" /></p>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=anh005&" alt="anh005" /></p>
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=anh005&" alt="anhntb" /></p>
